@@ -77,7 +77,6 @@ import net.ftb.data.UserManager;
 import net.ftb.download.Locations;
 import net.ftb.download.info.DownloadInfo;
 import net.ftb.download.workers.AssetDownloader;
-import net.ftb.gui.dialogs.AdvancedOptionsDialog;
 import net.ftb.gui.dialogs.InstallDirectoryDialog;
 import net.ftb.gui.dialogs.LauncherUpdateDialog;
 import net.ftb.gui.dialogs.LoadingDialog;
@@ -312,8 +311,6 @@ public class LaunchFrame extends JFrame {
                 LaunchFrame frame = new LaunchFrame(2);
                 instance = frame;
                 
-                AdvancedOptionsDialog.setDownloadServers();
-
                 /*
                  * Execute AuthlibDLWorker swingworker. done() will enable launch button as soon as possible
                  */

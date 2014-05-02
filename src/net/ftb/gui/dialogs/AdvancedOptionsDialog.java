@@ -159,7 +159,7 @@ public class AdvancedOptionsDialog extends JDialog {
         getContentPane().setLayout(layout);
 
         downloadLocationLbl = new JLabel(I18N.getLocaleString("ADVANCED_OPTIONS_DLLOCATION"));
-        downloadLocation = new JComboBox(getDownloadServerNames());
+        downloadLocation = new JComboBox();
         javaPathLbl = new JLabel(I18N.getLocaleString("ADVANCED_OPTIONS_JAVA_PATH"));
         javaPath = new JTextField();
         String javapath = settings.getJavaPath();

@@ -245,6 +245,7 @@ public class OptionsPane extends JPanel implements ILauncherPane {
             @Override
             public void actionPerformed (ActionEvent arg0) {
                 AdvancedOptionsDialog aod = new AdvancedOptionsDialog();
+                AdvancedOptionsDialog.setDownloadServers();
                 aod.setVisible(true);
             }
         });
